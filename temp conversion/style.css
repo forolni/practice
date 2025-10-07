@@ -1,0 +1,47 @@
+body{
+    background-color: hsl(0, 0%, 91%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+h1{
+    color: hsl(212, 100%, 50%);
+}
+form {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+#textBox{
+    text-align: center;
+    background-color: hsl(0, 0%, 91%);
+    border: none;
+    height: 50px;
+    font-size: 1.5em;
+    border-radius: 4px;
+    width: 260px;
+    color: rgb(41, 41, 41);
+    outline: none;
+}
+
+.deg {
+    font-size: 1.2em;
+}
+#toFahrenheit{
+    margin-top: 20px;
+}
+#submitBtn {
+    font-size: 1.2em;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 100%, 57%);
+    border: none;
+    cursor: pointer;
+}
+p{
+    font-size: 1.2em;
+    font-weight: 500;
+}

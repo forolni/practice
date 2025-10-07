@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dropdown{
+            display: inline-block;
+        }
+        .dropdown button{
+            background-color: hsl(0, 0%, 74%);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .dropdown a{
+            display: block;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: honeydew;
+            border-radius: 2px;
+            width: 100px;
+        }
+        .dropdown:hover button{
+            background-color: hsl(0, 0%, 89%);
+        }.dropdown:active button{
+            background-color: hsl(0, 0%, 77%);
+        }
+        .dropdown .content{
+            position: absolute;
+            display: none;
+            box-shadow: 2px 2px 5px rgb(227, 239, 235);
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .content a:hover{
+            background-color: rgb(217, 250, 239);
+            cursor: pointer;
+        }.content a:active{
+            background-color:  rgb(178, 215, 203);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="dropdown">
+        <button>menu</button>
+        <div class="content">
+            <a >apple</a>
+            <a >banana</a>
+            <a >orange</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem aliquid eum aliquam amet architecto vitae consequatur, optio neque consequuntur ut reiciendis dolore odio tenetur molestias? Officiis accusamus nulla magni vero!</p>
+</body>
+</html>

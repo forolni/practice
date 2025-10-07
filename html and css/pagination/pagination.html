@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .pagination {
+            text-align: center;
+        }
+        .pagination a{
+            color: black;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+        .pagination a.active{
+            background-color: rgb(171, 248, 56);
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .pagination a:hover:not(.active){
+            background-color: rgb(212, 212, 212);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is page 1</h1>
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum velit quibusdam vero! Fugit ex facilis quos praesentium exercitationem esse veritatis cum quasi aliquam a. Quae ab ex tenetur? Aut, cum?</P>
+
+    <div class="pagination">
+        <a href="pagination.html"><</a>
+        <a href="pagination.html" class="active">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="page2.html">></a>
+    </div>
+</body>
+</html>

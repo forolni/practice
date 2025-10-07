@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            animation-name:slideleft;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-direction: alternate;        
+        }
+        .hello{
+            width: 250px;
+            height: 250px;
+            font-size: 5em;
+            text-align: center;
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: red;
+            animation-name:glow;
+            animation-duration: 15s;
+            animation-timing-function: cubic-bezier(0.08, 0.44, 0.29, 0.96);
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            margin-top: 50px;
+            transition:transform 2s ease, border-radius 2s ;
+            cursor: pointer;
+        }
+        .hello:hover{
+            border-radius: 5px;
+            transform: scale(.7);
+        }
+        @keyframes slideleft{
+            from{transform: translateX(100%);}
+        }
+        @keyframes glow{
+            20%{box-shadow: 0px 0px 100px hsl(204, 68%, 54%);}
+            40%{box-shadow: 0px 0px 100px hsl(7, 100%, 62%);}
+            60%{box-shadow: 0px 0px 100px hsl(112, 91%, 61%);}
+            80%{box-shadow: 0px 0px 100px hsl(178, 100%, 59%);}
+            100%{box-shadow: 0px 0px 100px hsl(246, 100%, 63%);}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="hello">Hello</div>
+    </div>
+</body>
+</html>

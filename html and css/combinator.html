@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid;
+        }
+
+        .boxx {
+            border: 2px solid;
+        }
+
+         .box p{
+            background-color: purple; 
+        } 
+        .boxx > p{
+            background-color: purple;
+        }
+
+        .boxx ~ p{
+            background-color: yellow;
+        }
+        .boxx + p{
+            background-color: yellow;  /* will select only the first one */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>tis is #1</p>
+        <p>tis is #2</p>
+        <div>
+        <p>tis is #3</p>
+        </div>
+    </div>
+
+ <div class="boxx">
+        <p>tis is #4</p>
+        <p>tis is #5</p>
+        <div>
+        <p>tis is #6</p>
+        </div>
+    </div>
+
+    <p>this is #7</p>
+    <p>this is #8</p>
+</body>
+</html>

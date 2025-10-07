@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1::first-letter{
+            color: rgb(78, 78, 78);
+            font-size: 2em;
+            font-style: oblique;
+        }
+
+        p::first-line{
+            background-color: orange;
+            font-size: 1.5em;
+        }
+
+        p::selection{
+            background-color: rgb(243, 243, 243);
+            color: purple;
+        }
+
+        ul li::selection{
+            ackground-color: rgb(243, 243, 243);
+            color: purple;
+        }
+
+        #fruits li::before{
+            content: "😂";
+        }
+
+        #apple::after{
+            content: "🤣";
+            font-size: 1.2em;
+        }
+        #banana::after{
+            content: "😊";
+            font-size: .8em;
+        }
+        #orange::after{
+            content: "😒";
+            font-size: 1.7em;
+        }
+
+        #fruits li::marker{
+            content: "✔️";
+            color: hsl(0, 0%, 55%);
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis accusantium et officiis consequuntur sunt labore, beatae molestias error quisquam obcaecati nostrum assumenda at tempora voluptatem eveniet aliquid magnam sit?</p>
+
+    <ul id="fruits">
+        <li id="apple">apple</li>
+        <li id="banana">banana</li>
+        <li id="orange">orange</li>
+    </ul>
+</body>
+</html>

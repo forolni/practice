@@ -1,0 +1,36 @@
+#container{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+/* #dice{
+    transform:scale(1.5);
+} */
+#rollBtn{
+    background-color: hsl(212, 100%, 58%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#rollBtn:hover{
+    background-color: hsl(221, 87%, 64%);
+}#rollBtn:active{
+    background-color: hsl(221, 87%, 54%);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+}
+
+#diceResult{
+    margin: 20px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 10px;
+}

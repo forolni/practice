@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 2rem;
+            padding: 10px 15px;
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+        button{
+            font-size: 2rem;
+            border: none;
+            background-color: hsl(195, 53%, 59%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: hsl(195, 53%, 69%);
+        }
+        button:active{
+            background-color: hsl(195, 53%, 59%);
+        }
+
+        img{
+            max-width: 1000px;
+            width: 500px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #notPokemon{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="pokemonName" type="text" placeholder="Enter a pokemon name">
+        <button onclick="fetchData()">fetch pokemon</button><br>
+
+        <img id="pokemonSprite" src="" alt="pokemon sprite" style="display: none;">
+
+        <div id="notPokemon"></div>
+    </div>
+    
+
+    <script src="fetch.js"></script>
+</body>
+</html>

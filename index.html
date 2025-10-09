@@ -3,6 +3,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        #myBox{
+            background-color: lightgreen;
+            width: 300px;
+            height: 300px;
+            font-size: 4rem;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #myButton{
+            width: 300px;
+            font-size: 4rem;
+            padding: 10px;
+        }
+
+        #movingBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            font-size: 10rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1 id="h1text">Hello</h1>
@@ -11,11 +46,20 @@
     <input id="mytext" required>
     <button id="submit">submit</button><br>
 
+        <div id="myBox">
+            <p>click me 😃</p>
+        </div>
+        <button id="myButton">click</button><br>
+
+        <div id="movingBox">😃</div>
+    
 
     <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
 
-    <script src="sortMethod.js"></script>
-    <script src="setTimeOutFunc.js"></script>
+    <!-- <script src="sortMethod.js"></script> -->
+    <!-- <script src="try&catch.js"></script> -->
+    <!-- <script src="setTimeOutFunc.js"></script> -->
+     <script src="mouseEvent.js"></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#myButtons {
+    font-size: 6rem;
+    background-color: hsl(195, 53%, 69%);
+    border: none;
+    border-radius: 10px;
+    padding: 10 15px;
+    margin-bottom: 30px;
+}
+#myButtons:hover{
+    background-color: hsl(195, 53%, 79%);
+}
+#myButtons:active{
+    background-color: hsl(9, 100%, 84%);
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 3rem;
+}
+#resultDisplay{
+    font-size: 6rem;
+}
+
+.scoreDisplay{
+    font-size: 3rem;
+}
+
+.greenText, #playerDisplayScores{
+    color: lightgreen;
+}
+
+.redText, #computerDisplayScores{
+    color: tomato;
+}

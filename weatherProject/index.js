@@ -54,10 +54,10 @@ function displayWeatherInfo(data){
     cityDisplay.textContent = city;
     cityDisplay.classList.add("cityDisplay");
 
-    tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°k`;
+    tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
     tempDisplay.classList.add("tempDisplay");
 
-    humidityDisplay.textContent = `Humidity: ${humidity}`;
+    humidityDisplay.textContent = `Humidity: ${humidity}%`;
     humidityDisplay.classList.add("humidityDisplay");
 
     desDisplay.textContent = description;
